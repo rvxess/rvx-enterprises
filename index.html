@@ -6,197 +6,87 @@
 <title>RVX Enterprises | Online Retail, E-Commerce & General Supply</title>
 <meta name="description" content="RVX Enterprises - Udyam Registered Micro Enterprise in New Delhi for online retail, e-commerce, office stationery, household items and general supply enquiries.">
 <style>
-:root{
-  --primary:#0b4aa2;
-  --dark:#0d2f57;
-  --green:#1a8f4d;
-  --light:#f5f8fc;
-  --card:#ffffff;
-  --text:#1f2937;
-  --muted:#65758b;
-  --accent:#e8f1ff;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--text);line-height:1.6}
-header{position:sticky;top:0;z-index:10;background:var(--primary);color:#fff;padding:14px 5%;box-shadow:0 2px 10px #0002}
-.topbar{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.brand h1{font-size:24px;margin:0;letter-spacing:.4px}
-.brand small{opacity:.92}
-nav a{color:#fff;text-decoration:none;margin:0 9px;font-size:14px}
-.hero{background:linear-gradient(135deg,#e7f0ff,#ffffff);padding:70px 6%;text-align:center}
-.hero-inner{max-width:900px;margin:auto}
-.hero h2{font-size:44px;line-height:1.15;color:var(--primary);margin:0 0 18px}
-.hero p{font-size:19px;max-width:760px;margin:0 auto 22px}
-.btn{display:inline-block;padding:13px 20px;border-radius:9px;text-decoration:none;color:#fff;margin:6px;font-weight:600}
-.primary{background:var(--primary)}
-.whatsapp{background:var(--green)}
-.secondary{background:var(--dark)}
-section{padding:48px 6%}
-.container{max-width:1150px;margin:auto}
-h3.section-title{text-align:center;font-size:32px;color:var(--primary);margin:0 0 28px}
-.intro{background:#fff;border-radius:14px;padding:26px;box-shadow:0 2px 14px #00000010}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-.card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 2px 14px #00000010;border:1px solid #e9eef5}
-.card h4{color:var(--dark);font-size:20px;margin:0 0 9px}
-.card p{color:var(--muted);margin:0 0 16px}
-.price{font-weight:700;color:var(--primary);margin-bottom:13px}
-.card .btn{margin:0;font-size:14px;padding:10px 14px}
-.badges{text-align:center;margin-top:18px}
-.badge{display:inline-block;background:var(--accent);color:var(--primary);padding:8px 12px;border-radius:20px;margin:4px;font-size:13px;font-weight:600}
-.details{background:#fff;border-radius:14px;padding:26px;box-shadow:0 2px 14px #00000010}
-.details table{width:100%;border-collapse:collapse}
-.details td{padding:10px;border-bottom:1px solid #edf1f6;vertical-align:top}
-.details td:first-child{font-weight:700;width:38%;color:var(--dark)}
-.cta{background:var(--dark);color:white;border-radius:16px;padding:32px;text-align:center}
-.cta h3{font-size:28px;margin-top:0}
-.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:18px}
-.contact-box{background:#ffffff10;border:1px solid #ffffff25;border-radius:12px;padding:18px}
-.contact-box a{color:#fff}
+:root{--primary:#0b4aa2;--dark:#0d2f57;--green:#1a8f4d;--light:#f5f8fc;--text:#1f2937;--muted:#65758b;--accent:#e8f1ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:var(--text);line-height:1.6}
+header{background:var(--primary);color:#fff;padding:14px 5%;box-shadow:0 2px 10px #0002}.topbar{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.brand h1{font-size:24px;margin:0}.brand small{opacity:.92}nav a{color:#fff;text-decoration:none;margin:0 9px;font-size:14px}
+.hero{background:linear-gradient(135deg,#e7f0ff,#fff);padding:62px 6%;text-align:center}.hero-inner{max-width:900px;margin:auto}.hero h2{font-size:42px;line-height:1.15;color:var(--primary);margin:0 0 18px}.hero p{font-size:18px;max-width:760px;margin:0 auto 22px}
+.btn{display:inline-block;padding:12px 18px;border-radius:9px;text-decoration:none;color:#fff;margin:6px;font-weight:600}.primary{background:var(--primary)}.whatsapp{background:var(--green)}
+section{padding:46px 6%}.container{max-width:1150px;margin:auto}.section-title{text-align:center;font-size:32px;color:var(--primary);margin:0 0 28px}
+.intro,.details{background:#fff;border-radius:14px;padding:26px;box-shadow:0 2px 14px #00000010}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 14px #00000010;border:1px solid #e9eef5}
+.card img{width:100%;height:220px;object-fit:cover;display:block}.card-body{padding:18px}.card h4{color:var(--dark);font-size:19px;margin:0 0 8px}.card p{color:var(--muted);margin:0 0 14px}.price{font-weight:700;color:var(--primary);margin-bottom:12px}
+.badges{text-align:center;margin-top:18px}.badge{display:inline-block;background:var(--accent);color:var(--primary);padding:8px 12px;border-radius:20px;margin:4px;font-size:13px;font-weight:600}
+.details table{width:100%;border-collapse:collapse}.details td{padding:10px;border-bottom:1px solid #edf1f6}.details td:first-child{font-weight:700;width:38%;color:var(--dark)}
+.cta{background:var(--dark);color:white;border-radius:16px;padding:32px;text-align:center}.cta h3{font-size:28px;margin-top:0}.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:18px}
+.contact-box{background:#ffffff10;border:1px solid #ffffff25;border-radius:12px;padding:18px}.contact-box a{color:#fff}.note{font-size:12px;color:var(--muted);margin-top:14px}
 footer{background:#071e38;color:#fff;text-align:center;padding:25px 6%;font-size:13px}
-.note{font-size:12px;color:var(--muted);margin-top:14px}
-@media(max-width:650px){
-  .hero{padding:48px 5%}
-  .hero h2{font-size:34px}
-  .hero p{font-size:17px}
-  header{position:static}
-  nav{width:100%;text-align:center}
-  nav a{display:inline-block;margin:6px 8px}
-  .details td{display:block;width:100%!important;padding:7px 0}
-  .details tr{display:block;padding:8px 0;border-bottom:1px solid #edf1f6}
-  .details td{border-bottom:0}
-}
+@media(max-width:650px){.hero{padding:45px 5%}.hero h2{font-size:33px}.hero p{font-size:17px}nav{width:100%;text-align:center}.card img{height:210px}.details td{display:block;width:100%!important;padding:7px 0}.details tr{display:block;padding:8px 0;border-bottom:1px solid #edf1f6}.details td{border-bottom:0}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="topbar">
-    <div class="brand">
-      <h1>RVX ENTERPRISES</h1>
-      <small>Online Retail • E-Commerce • General Supply</small>
-    </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#business">Business Details</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-inner">
-    <h2>Reliable Online Retail & General Supply</h2>
-    <p>RVX Enterprises is a Udyam Registered Micro Enterprise based in New Delhi, offering online retail, e-commerce and general product sourcing & supply enquiries.</p>
-    <a class="btn primary" href="#products">View Products</a>
-    <a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20have%20a%20product%20enquiry.">WhatsApp Enquiry</a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <h3 class="section-title">About Us</h3>
-    <div class="intro">
-      <p><strong>RVX Enterprises</strong> is a New Delhi based micro enterprise engaged in trading, online retail and e-commerce. We aim to connect customers, offices and businesses with useful products through convenient online enquiry, sourcing and supply support.</p>
-      <p>Our focus is on simple communication, transparent enquiry and dependable service. Customers can contact us directly on WhatsApp for product availability, quantity and pricing.</p>
-      <div class="badges">
-        <span class="badge">Udyam Registered</span>
-        <span class="badge">Micro Enterprise</span>
-        <span class="badge">Online Retail</span>
-        <span class="badge">E-Commerce</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="products">
-  <div class="container">
-    <h3 class="section-title">Products & Supply Categories</h3>
-    <div class="grid">
-
-      <div class="card">
-        <h4>Office Stationery</h4>
-        <p>Pens, files, folders, notebooks, paper products and other routine office stationery items.</p>
-        <div class="price">Price: Ask on WhatsApp</div>
-        <a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20want%20to%20enquire%20about%20Office%20Stationery.">Enquire Now</a>
-      </div>
-
-      <div class="card">
-        <h4>Office & General Supplies</h4>
-        <p>Useful office-use items and general products for individual, office and business requirements.</p>
-        <div class="price">Price: Ask on WhatsApp</div>
-        <a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20want%20to%20enquire%20about%20Office%20and%20General%20Supplies.">Enquire Now</a>
-      </div>
-
-      <div class="card">
-        <h4>Home & Utility Items</h4>
-        <p>Selected household, utility and daily-use products available through online enquiry.</p>
-        <div class="price">Price: Ask on WhatsApp</div>
-        <a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20want%20to%20enquire%20about%20Home%20and%20Utility%20Items.">Enquire Now</a>
-      </div>
-
-      <div class="card">
-        <h4>Online Retail Products</h4>
-        <p>Selected products offered through e-commerce and online order/enquiry channels.</p>
-        <div class="price">Price: Ask on WhatsApp</div>
-        <a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20want%20to%20enquire%20about%20Online%20Retail%20Products.">Enquire Now</a>
-      </div>
-
-      <div class="card">
-        <h4>Bulk Requirement</h4>
-        <p>For suitable bulk enquiries from offices, institutions and businesses. Share quantity and requirement details.</p>
-        <div class="price">Quotation: On Request</div>
-        <a class="btn secondary" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20have%20a%20bulk%20requirement.%20Please%20share%20a%20quotation.">Request Quotation</a>
-      </div>
-
-      <div class="card">
-        <h4>Product Sourcing Enquiry</h4>
-        <p>Looking for a general-use product? Send the product name, quantity and preferred specifications.</p>
-        <div class="price">Availability: On Enquiry</div>
-        <a class="btn secondary" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20need%20help%20sourcing%20a%20product.">Send Requirement</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="business">
-  <div class="container">
-    <h3 class="section-title">Business Details</h3>
-    <div class="details">
-      <table>
-        <tr><td>Enterprise Name</td><td>RVX ENTERPRISES</td></tr>
-        <tr><td>Enterprise Classification</td><td>Micro Enterprise</td></tr>
-        <tr><td>Major Activity</td><td>Trading</td></tr>
-        <tr><td>Business Activity</td><td>Retail sale via e-commerce</td></tr>
-        <tr><td>Udyam Registration No.</td><td>UDYAM-DL-10-0127326</td></tr>
-        <tr><td>Business Location</td><td>West Sagar Pur, New Delhi - 110046</td></tr>
-      </table>
-      <p class="note">Udyam registration/classification information is displayed for business identification. It does not imply Government endorsement of this website, products or services.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="cta">
-      <h3>Contact RVX Enterprises</h3>
-      <p>Send your product name, quantity and requirement on WhatsApp for enquiry.</p>
-      <a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20would%20like%20to%20make%20an%20enquiry.">Chat on WhatsApp</a>
-      <div class="contact-grid">
-        <div class="contact-box"><strong>Mobile / WhatsApp</strong><br><a href="tel:+919315040471">9315040471</a></div>
-        <div class="contact-box"><strong>Email</strong><br><a href="mailto:xess.r.v@gmail.com">xess.r.v@gmail.com</a></div>
-        <div class="contact-box"><strong>Location</strong><br>West Sagar Pur, New Delhi - 110046</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 RVX Enterprises. All Rights Reserved.<br>
-  Udyam Registered Micro Enterprise | New Delhi
-</footer>
-
-</body>
-</html>
+<header><div class="topbar"><div class="brand"><h1>RVX ENTERPRISES</h1><small>Online Retail • E-Commerce • General Supply</small></div><nav><a href="#about">About</a><a href="#products">Products</a><a href="#business">Business Details</a><a href="#contact">Contact</a></nav></div></header>
+<section class="hero"><div class="hero-inner"><h2>Reliable Online Retail & General Supply</h2><p>RVX Enterprises is a Udyam Registered Micro Enterprise based in New Delhi, offering online retail, e-commerce and general product sourcing & supply enquiries.</p><a class="btn primary" href="#products">View Products</a><a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20have%20a%20product%20enquiry.">WhatsApp Enquiry</a></div></section>
+<section id="about"><div class="container"><h3 class="section-title">About Us</h3><div class="intro"><p><strong>RVX Enterprises</strong> is a New Delhi based micro enterprise engaged in trading, online retail and e-commerce. We aim to connect customers, offices and businesses with useful products through convenient online enquiry, sourcing and supply support.</p><div class="badges"><span class="badge">Udyam Registered</span><span class="badge">Micro Enterprise</span><span class="badge">Online Retail</span><span class="badge">E-Commerce</span></div></div></div></section>
+<section id="products"><div class="container"><h3 class="section-title">Products & Supply Categories</h3><div class="grid">
+<div class="card">
+<img src="images/stationery-set.jpg" alt="Stationery Set">
+<div class="card-body"><h4>Stationery Set</h4><p>Pens, pencils, scissors and routine desk stationery.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Stationery%20Set.">Enquire Now</a></div></div><div class="card">
+<img src="images/notebooks.jpg" alt="Notebooks & Writing">
+<div class="card-body"><h4>Notebooks & Writing</h4><p>Notebooks, diaries and writing essentials.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Notebooks%20%26%20Writing.">Enquire Now</a></div></div><div class="card">
+<img src="images/files-folders.jpg" alt="Files & Folders">
+<div class="card-body"><h4>Files & Folders</h4><p>Office files, ring binders and document organization.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Files%20%26%20Folders.">Enquire Now</a></div></div><div class="card">
+<img src="images/desk-organizer.jpg" alt="Desk Organizer">
+<div class="card-body"><h4>Desk Organizer</h4><p>Desk organizers and small office accessories.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Desk%20Organizer.">Enquire Now</a></div></div><div class="card">
+<img src="images/packing-tapes.jpg" alt="Packing Tapes">
+<div class="card-body"><h4>Packing Tapes</h4><p>Packing tapes and tape dispensers.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Packing%20Tapes.">Enquire Now</a></div></div><div class="card">
+<img src="images/packaging-supplies.jpg" alt="Packaging Supplies">
+<div class="card-body"><h4>Packaging Supplies</h4><p>Boxes, bubble wrap, envelopes and packing material.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Packaging%20Supplies.">Enquire Now</a></div></div><div class="card">
+<img src="images/wireless-mouse.jpg" alt="Computer Accessories">
+<div class="card-body"><h4>Computer Accessories</h4><p>Wireless mouse and selected computer accessories.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Computer%20Accessories.">Enquire Now</a></div></div><div class="card">
+<img src="images/usb-drive.jpg" alt="USB & Storage">
+<div class="card-body"><h4>USB & Storage</h4><p>USB drives and portable storage accessories.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20USB%20%26%20Storage.">Enquire Now</a></div></div><div class="card">
+<img src="images/cleaning-supplies.jpg" alt="Cleaning Supplies">
+<div class="card-body"><h4>Cleaning Supplies</h4><p>Selected household and office cleaning items.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Cleaning%20Supplies.">Enquire Now</a></div></div><div class="card">
+<img src="images/power-strip.jpg" alt="Electrical Utility">
+<div class="card-body"><h4>Electrical Utility</h4><p>Power strips and basic electrical utility products.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Electrical%20Utility.">Enquire Now</a></div></div><div class="card">
+<img src="images/batteries.jpg" alt="Batteries">
+<div class="card-body"><h4>Batteries</h4><p>Selected rechargeable and general-use batteries.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Batteries.">Enquire Now</a></div></div><div class="card">
+<img src="images/calculator.jpg" alt="Office Calculator">
+<div class="card-body"><h4>Office Calculator</h4><p>Calculators and basic office desk equipment.</p>
+<div class="price">Price: Ask on WhatsApp</div>
+<a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20enquire%20about%20Office%20Calculator.">Enquire Now</a></div></div>
+</div></div></section>
+<section id="business"><div class="container"><h3 class="section-title">Business Details</h3><div class="details"><table>
+<tr><td>Enterprise Name</td><td>RVX ENTERPRISES</td></tr>
+<tr><td>Enterprise Classification</td><td>Micro Enterprise</td></tr>
+<tr><td>Major Activity</td><td>Trading</td></tr>
+<tr><td>Business Activity</td><td>Retail sale via e-commerce</td></tr>
+<tr><td>Udyam Registration No.</td><td>UDYAM-DL-10-0127326</td></tr>
+<tr><td>Business Location</td><td>West Sagar Pur, New Delhi - 110046</td></tr>
+</table><p class="note">Udyam registration/classification information is displayed for business identification. It does not imply Government endorsement of this website, products or services.</p></div></div></section>
+<section id="contact"><div class="container"><div class="cta"><h3>Contact RVX Enterprises</h3><p>Send your product name, quantity and requirement on WhatsApp for enquiry.</p><a class="btn whatsapp" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises,%20I%20would%20like%20to%20make%20an%20enquiry.">Chat on WhatsApp</a><div class="contact-grid"><div class="contact-box"><strong>Mobile / WhatsApp</strong><br><a href="tel:+919315040471">9315040471</a></div><div class="contact-box"><strong>Email</strong><br><a href="mailto:xess.r.v@gmail.com">xess.r.v@gmail.com</a></div><div class="contact-box"><strong>Location</strong><br>West Sagar Pur, New Delhi - 110046</div></div></div></div></section>
+<footer>© 2026 RVX Enterprises. All Rights Reserved.<br>Udyam Registered Micro Enterprise | New Delhi</footer>
+</body></html>
