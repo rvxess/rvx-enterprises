@@ -97,14 +97,19 @@ button,input,textarea{
   display:flex;
   align-items:center;
   min-width:0;
-  flex:0 1 430px;
+  flex:0 0 360px;
+  height:88px;
+  overflow:hidden;
 }
 
 .logo img{
-  width:clamp(300px,35vw,430px);
-  height:82px;
+  width:360px !important;
+  max-width:none !important;
+  height:88px !important;
   object-fit:contain;
   object-position:left center;
+  transform:scale(1.18);
+  transform-origin:left center;
 }
 
 .nav-links{
@@ -939,13 +944,23 @@ footer a:hover{
   }
 
   .logo{
-    min-width:0;
-  }
+  flex:1 1 auto;
+  width:calc(100% - 58px);
+  min-width:0;
+  height:76px;
+  overflow:hidden;
+}
 
-  .logo img{
-    width:220px;
-    max-height:64px;
-  }
+.logo img{
+  width:300px !important;
+  max-width:none !important;
+  height:76px !important;
+  max-height:none !important;
+  object-fit:contain;
+  object-position:left center;
+  transform:scale(1.15);
+  transform-origin:left center;
+}
 
   .nav-links{
     top:76px;
