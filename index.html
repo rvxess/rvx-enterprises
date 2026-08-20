@@ -1,481 +1,1215 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RVX Enterprises | Online Retail • E-Commerce • General Supply</title>
-  <meta name="description" content="RVX Enterprises, New Delhi — Office supplies, home & utility products, electronics & accessories, daily-use products, gifts, general supply and requirement-based sourcing." />
-  <meta name="keywords" content="RVX Enterprises, office supplies Delhi, general supplier Delhi, online retail Delhi, e-commerce, stationery supplier, B2B supplier, West Sagar Pur" />
-  <meta name="theme-color" content="#0b1f38" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:title" content="RVX Enterprises" />
-  <meta property="og:description" content="Quality Products • Best Prices • Reliable Service" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rvxess.github.io/rvx-enterprises/" />
+  <title>RVX Enterprises | Online Retail • E-Commerce • General Supply</title>
+
+  <meta name="description" content="RVX Enterprises, New Delhi - Online Retail, E-Commerce, Office Supplies, Stationery, Electronics, Computer Accessories, Hygiene, Cleaning, Gifts and General Supply.">
+
+  <meta name="theme-color" content="#071a31">
+
+  <meta property="og:title" content="RVX Enterprises">
+  <meta property="og:description" content="One Stop Solution for Your Daily Needs">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rvxess.github.io/rvx-enterprises/">
 
   <style>
+
     :root{
-      --navy:#0b1f38;
-      --navy2:#112e4f;
-      --gold:#d6a23d;
-      --gold2:#f2c66a;
+      --navy:#071a31;
+      --navy2:#0d2f55;
+      --blue:#164b7e;
+      --gold:#d9a62e;
+      --gold2:#f3c85c;
+      --green:#16a765;
       --ink:#172536;
-      --muted:#64748b;
-      --paper:#f7f9fc;
+      --muted:#67778b;
+      --paper:#f5f8fc;
       --white:#ffffff;
-      --line:#dfe6ef;
-      --green:#18a957;
-      --shadow:0 14px 35px rgba(15,34,58,.10);
+      --line:#dfe7f0;
+      --soft:#eef4f9;
+      --shadow:0 15px 38px rgba(10,34,63,.10);
       --radius:20px;
     }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       margin:0;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      font-family:Arial, Helvetica, sans-serif;
       color:var(--ink);
       background:var(--paper);
       line-height:1.6;
     }
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%}
-    .wrap{width:min(1160px,92%);margin:auto}
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    section{
+      scroll-margin-top:110px;
+    }
+
+    .wrap{
+      width:min(1180px,92%);
+      margin:auto;
+    }
+
+
+    /* TOP BAR */
+
     .topbar{
-      background:#071629;color:#dbe7f4;font-size:.92rem;
-      padding:8px 0;
+      background:var(--navy);
+      color:#dce8f4;
+      font-size:14px;
     }
-    .topbar .wrap{display:flex;gap:18px;justify-content:space-between;align-items:center;flex-wrap:wrap}
-    .topbar a:hover{color:#fff}
+
+    .topbar .wrap{
+      min-height:38px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .topbar a:hover{
+      color:white;
+    }
+
+
+    /* HEADER */
+
     header{
-      position:sticky;top:0;z-index:50;
-      background:rgba(255,255,255,.96);
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(15,34,58,.08);
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(255,255,255,.98);
+      border-bottom:1px solid rgba(7,26,49,.08);
+      box-shadow:0 4px 15px rgba(7,26,49,.05);
     }
-    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
-    .brand{display:flex;align-items:center;gap:0;font-weight:850;color:var(--navy)}
+
+    nav{
+      min-height:90px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:22px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+    }
+
     .brandmark{
-  width:260px;
-  height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:flex-start;
-  background:transparent;
-  border-radius:0;
-  box-shadow:none;
-  overflow:hidden;
-  flex-shrink:0;
-}
-.brandmark img{
-  width:100%;
-  height:100%;
-  object-fit:contain;
-  object-position:left center;
-  display:block;
-}
-    .brand small{display:block;font-size:.72rem;letter-spacing:.14em;color:var(--muted);font-weight:700}
-    .navlinks{display:flex;align-items:center;gap:18px;font-weight:700;font-size:.93rem}
-    .navlinks a:hover{color:#b57c15}
-    .navcta{
-      padding:10px 16px;border-radius:999px;background:var(--green);color:white!important;
-      box-shadow:0 8px 18px rgba(24,169,87,.22)
+      width:370px;
+      height:80px;
+      display:flex;
+      align-items:center;
     }
-    .menu{display:none;border:0;background:none;font-size:1.6rem;color:var(--navy)}
+
+    .brandmark img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      object-position:left center;
+    }
+
+
+    .navlinks{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:17px;
+      font-size:14px;
+      font-weight:700;
+      color:#26384c;
+    }
+
+    .navlinks a:hover{
+      color:#a86f08;
+    }
+
+    .navcta{
+      background:linear-gradient(135deg,#19ae68,#0c8c50);
+      color:white!important;
+      padding:11px 16px;
+      border-radius:30px;
+      box-shadow:0 8px 20px rgba(22,167,101,.20);
+    }
+
+    .menu{
+      display:none;
+      border:none;
+      background:#edf3f8;
+      width:44px;
+      height:44px;
+      border-radius:12px;
+      font-size:22px;
+      color:var(--navy);
+    }
+
+
+    /* HERO */
+
     .hero{
       background:
-        radial-gradient(circle at 85% 20%, rgba(214,162,61,.18), transparent 24%),
-        radial-gradient(circle at 10% 80%, rgba(69,126,181,.14), transparent 26%),
-        linear-gradient(135deg,#ffffff 0%,#f8fbff 58%,#eef4fa 100%);
-      padding:74px 0 68px;border-bottom:1px solid var(--line);
+      radial-gradient(circle at 88% 15%,rgba(217,166,46,.16),transparent 22%),
+      radial-gradient(circle at 8% 78%,rgba(22,75,126,.10),transparent 27%),
+      linear-gradient(135deg,#ffffff,#f8fbff 58%,#edf4fb);
+
+      padding:70px 0 62px;
+      border-bottom:1px solid var(--line);
     }
-    .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:42px;align-items:center}
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.12fr .88fr;
+      gap:45px;
+      align-items:center;
+    }
+
     .eyebrow{
-      display:inline-flex;gap:8px;align-items:center;
-      background:#fff7e6;border:1px solid #f2d296;color:#8b5a00;
-      font-size:.82rem;font-weight:800;padding:7px 12px;border-radius:999px;
-      letter-spacing:.04em;
+      display:inline-block;
+      background:#fff7e5;
+      border:1px solid #f0d18a;
+      color:#845600;
+      padding:7px 13px;
+      border-radius:30px;
+      font-size:13px;
+      font-weight:bold;
     }
-    h1{font-size:clamp(2.5rem,6vw,5rem);line-height:.95;margin:18px 0 18px;color:var(--navy);letter-spacing:-.045em}
-    h1 span{color:#b9821c}
-    .lead{font-size:1.16rem;color:#45566b;max-width:720px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+
+    h1{
+      margin:18px 0 16px;
+      color:var(--navy);
+      font-size:clamp(42px,6vw,76px);
+      line-height:1;
+      letter-spacing:-2px;
+    }
+
+    h1 span{
+      color:#c28b20;
+    }
+
+    .lead{
+      color:#4d6076;
+      font-size:17px;
+      max-width:720px;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:25px;
+    }
+
     .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:9px;
-      padding:13px 18px;border-radius:12px;font-weight:800;border:1px solid transparent;
-      transition:.2s ease;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:12px 17px;
+      border-radius:12px;
+      font-weight:bold;
+      transition:.2s;
+      border:1px solid transparent;
     }
-    .btn:hover{transform:translateY(-2px)}
-    .btn-primary{background:var(--green);color:#fff;box-shadow:0 10px 22px rgba(24,169,87,.20)}
-    .btn-dark{background:var(--navy);color:#fff}
-    .btn-outline{border-color:#cbd6e2;background:#fff;color:var(--navy)}
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn-primary{
+      color:white;
+      background:linear-gradient(135deg,#19ae68,#0c8c50);
+    }
+
+    .btn-dark{
+      color:white;
+      background:var(--navy);
+    }
+
+    .btn-outline{
+      background:white;
+      border-color:#cad5e1;
+      color:var(--navy);
+    }
+
+
+    /* TRUST */
+
+    .trust-strip{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:10px;
+      margin-top:25px;
+    }
+
+    .trust-item{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:13px;
+      text-align:center;
+      font-size:14px;
+      font-weight:bold;
+      color:#26384c;
+      box-shadow:0 7px 18px rgba(10,34,63,.06);
+    }
+
+
+    /* HERO CARD */
+
     .hero-card{
-      background:linear-gradient(160deg,var(--navy),#173f69);
-      color:white;border-radius:28px;padding:28px;box-shadow:0 22px 60px rgba(11,31,56,.22);
-      position:relative;overflow:hidden
+      background:linear-gradient(145deg,#09223d,#154d7d);
+      color:white;
+      border-radius:28px;
+      padding:28px;
+      box-shadow:0 22px 55px rgba(7,26,49,.17);
     }
-    .hero-card:after{
-      content:"";position:absolute;width:220px;height:220px;border-radius:50%;
-      background:rgba(214,162,61,.13);right:-80px;top:-80px
+
+    .gold{
+      color:var(--gold2);
+      font-weight:bold;
+      letter-spacing:1px;
+      font-size:13px;
     }
-    .hero-card h3{margin:0 0 5px;font-size:1.45rem}
-    .hero-card .gold{color:var(--gold2)}
-    .quickgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+
+    .hero-card h3{
+      font-size:25px;
+      margin:6px 0 8px;
+    }
+
+    .hero-card p{
+      color:#cad9e8;
+    }
+
+    .quickgrid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:20px;
+    }
+
     .quick{
-      padding:15px;border:1px solid rgba(255,255,255,.14);border-radius:16px;
-      background:rgba(255,255,255,.07)
+      min-height:100px;
+      padding:14px;
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:16px;
+      background:rgba(255,255,255,.06);
     }
-    .quick strong{display:block;color:#fff}
-    .quick small{color:#c8d8e8}
-    section{padding:72px 0}
-    .section-head{text-align:center;max-width:760px;margin:0 auto 34px}
-    .section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;color:var(--navy);margin:0 0 12px}
-    .section-head p{color:var(--muted);margin:0}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+    .quick strong{
+      display:block;
+    }
+
+    .quick small{
+      color:#c9d9e8;
+    }
+
+
+    /* GENERAL SECTIONS */
+
+    section{
+      padding:70px 0;
+    }
+
+    .soft{
+      background:var(--soft);
+    }
+
+    .section-head{
+      max-width:780px;
+      margin:0 auto 32px;
+      text-align:center;
+    }
+
+    .section-head h2{
+      margin:0 0 10px;
+      color:var(--navy);
+      font-size:clamp(32px,4vw,46px);
+    }
+
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+    }
+
+
+    /* CATEGORY CARDS */
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
     .card{
-      background:white;border:1px solid var(--line);border-radius:var(--radius);
-      padding:24px;box-shadow:var(--shadow)
+      background:white;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:23px;
+      box-shadow:var(--shadow);
+      transition:.2s;
     }
+
+    .card:hover{
+      transform:translateY(-3px);
+    }
+
     .icon{
-      width:48px;height:48px;border-radius:14px;display:grid;place-items:center;
-      background:#f2f6fb;color:var(--navy);font-size:1.35rem;margin-bottom:14px
+      width:48px;
+      height:48px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:#eef4f9;
+      font-size:22px;
+      margin-bottom:13px;
     }
-    .card h3{margin:0 0 8px;color:var(--navy)}
-    .card p{margin:0;color:var(--muted)}
-    .soft{background:#eef4f9}
-    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+
+    .card h3{
+      margin:0 0 7px;
+      color:var(--navy);
+      font-size:17px;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+    }
+
+
+    /* PRODUCT IMAGES */
+
+    .products-gallery{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+      margin-top:25px;
+    }
+
+    .product-tile{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(10,34,63,.08);
+    }
+
+    .product-tile img{
+      width:100%;
+      height:165px;
+      object-fit:cover;
+      background:#eef3f8;
+    }
+
+    .product-tile .body{
+      padding:14px;
+    }
+
+    .product-tile strong{
+      display:block;
+      color:var(--navy);
+    }
+
+    .product-tile span{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+    }
+
     .about-panel{
-      border-radius:24px;padding:30px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)
+      background:white;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:29px;
+      box-shadow:var(--shadow);
     }
-    .about-panel.dark{background:var(--navy);color:#dbe6f0;border-color:var(--navy)}
-    .about-panel.dark h2,.about-panel.dark h3{color:#fff}
-    .about-panel p{color:var(--muted)}
-    .about-panel.dark p{color:#cad6e4}
-    .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
-    .fact{padding:14px;border-radius:14px;background:#f7f9fc;border:1px solid var(--line)}
-    .dark .fact{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.13)}
-    .fact span{display:block;font-size:.77rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:800}
-    .dark .fact span{color:#9fb5ca}
-    .fact strong{font-size:.98rem}
-    .channels{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+    .about-panel h2,
+    .about-panel h3{
+      color:var(--navy);
+      margin-top:0;
+    }
+
+    .about-panel p{
+      color:var(--muted);
+    }
+
+    .about-panel.dark{
+      background:linear-gradient(145deg,#071a31,#0e345a);
+      color:white;
+      border-color:#0e345a;
+    }
+
+    .about-panel.dark h3{
+      color:white;
+    }
+
+    .about-panel.dark p{
+      color:#c7d6e4;
+    }
+
+    .facts{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:11px;
+      margin-top:18px;
+    }
+
+    .fact{
+      padding:13px;
+      background:#f7f9fc;
+      border:1px solid var(--line);
+      border-radius:14px;
+    }
+
+    .dark .fact{
+      background:rgba(255,255,255,.07);
+      border-color:rgba(255,255,255,.13);
+    }
+
+    .fact span{
+      display:block;
+      font-size:11px;
+      color:var(--muted);
+      text-transform:uppercase;
+      font-weight:bold;
+      letter-spacing:1px;
+    }
+
+    .dark .fact span{
+      color:#a7bdd0;
+    }
+
+    .certificate-link{
+      display:inline-block;
+      margin-top:17px;
+      color:#ffe09a;
+      font-weight:bold;
+    }
+
+
+    /* BUSINESS PROCESS */
+
+    .steps{
+      counter-reset:step;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:17px;
+    }
+
+    .step{
+      counter-increment:step;
+      background:white;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+
+    .step::before{
+      content:counter(step);
+      width:38px;
+      height:38px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      background:#eef4f9;
+      color:var(--navy);
+      font-weight:bold;
+      margin-bottom:12px;
+    }
+
+    .step h3{
+      margin:0 0 6px;
+      color:var(--navy);
+    }
+
+    .step p{
+      margin:0;
+      color:var(--muted);
+    }
+
+
+    /* DIGITAL CHANNELS */
+
+    .channels{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+
     .channel{
-      background:white;border:1px solid var(--line);border-radius:18px;padding:20px;
-      display:flex;flex-direction:column;gap:8px;min-height:180px
+      min-height:190px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      background:white;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      box-shadow:0 10px 24px rgba(10,34,63,.07);
     }
-    .channel strong{color:var(--navy);font-size:1.1rem}
-    .status{font-size:.77rem;font-weight:800;border-radius:999px;padding:4px 9px;width:max-content}
-    .ok{background:#e8f8ef;color:#097a39}
-    .pending{background:#fff4dc;color:#8b5c00}
-    .channel a.link{margin-top:auto;color:#0b63b8;font-weight:800}
-    .channel a.link:hover{text-decoration:underline}
+
+    .channel strong{
+      font-size:17px;
+      color:var(--navy);
+    }
+
+    .channel span:not(.status){
+      color:#55687e;
+    }
+
+    .status{
+      width:max-content;
+      padding:4px 9px;
+      border-radius:30px;
+      font-size:11px;
+      font-weight:bold;
+    }
+
+    .ok{
+      background:#e8f8ef;
+      color:#087a3a;
+    }
+
+    .pending{
+      background:#fff4dc;
+      color:#8b5c00;
+    }
+
+    .channel .link{
+      margin-top:auto;
+      color:#0b64b8;
+      font-weight:bold;
+    }
+
+    .channel .link:hover{
+      text-decoration:underline;
+    }
+
+
+    /* CALL TO ACTION */
+
     .cta{
-      background:linear-gradient(135deg,var(--navy),#173f69);color:white;
-      border-radius:28px;padding:36px;display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:center;
-      box-shadow:0 22px 50px rgba(11,31,56,.22)
+      background:linear-gradient(135deg,#071a31,#164b7e);
+      color:white;
+      border-radius:28px;
+      padding:36px;
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      gap:24px;
+      align-items:center;
+      box-shadow:0 22px 55px rgba(7,26,49,.16);
     }
-    .cta h2{margin:0 0 8px;font-size:clamp(1.8rem,4vw,3rem)}
-    .cta p{margin:0;color:#c9d8e8}
-    .cta-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
-    .contact-list{display:grid;gap:10px}
+
+    .cta h2{
+      margin:0 0 8px;
+      font-size:clamp(29px,4vw,44px);
+    }
+
+    .cta p{
+      margin:0;
+      color:#cbd9e7;
+    }
+
+    .cta-actions{
+      display:flex;
+      justify-content:flex-end;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+
+    /* CONTACT */
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:22px;
+    }
+
+    .contact-list{
+      display:grid;
+      gap:10px;
+    }
+
     .contact-row{
-      display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);
-      padding:15px;border-radius:14px
+      display:flex;
+      gap:11px;
+      background:white;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px;
     }
-    .contact-row b{color:var(--navy)}
-    .contact-row small{display:block;color:var(--muted)}
+
+    .contact-row b{
+      color:var(--navy);
+    }
+
+    .contact-row small{
+      display:block;
+      color:var(--muted);
+    }
+
     .notice{
-      background:#fff8e8;border:1px solid #efcf8a;color:#76500b;padding:15px;border-radius:14px;font-size:.92rem
+      background:#fff8e8;
+      border:1px solid #efcf8a;
+      color:#73500d;
+      border-radius:14px;
+      padding:14px;
+      font-size:14px;
     }
-    footer{background:#071629;color:#cbd7e4;padding:34px 0 24px;margin-top:30px}
-    .footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:24px}
-    footer h4{color:white;margin:0 0 10px}
-    footer a{display:block;margin:6px 0;color:#cbd7e4}
-    footer a:hover{color:white}
-    .copyright{border-top:1px solid rgba(255,255,255,.10);margin-top:22px;padding-top:18px;font-size:.88rem;color:#8fa4b8}
+
+
+    /* FOOTER */
+
+    footer{
+      background:#061628;
+      color:#cbd7e4;
+      padding:36px 0 24px;
+      margin-top:24px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr .8fr;
+      gap:24px;
+    }
+
+    footer h4{
+      color:white;
+      margin:0 0 9px;
+    }
+
+    footer a{
+      display:block;
+      margin:6px 0;
+    }
+
+    footer a:hover{
+      color:white;
+    }
+
+    .copyright{
+      border-top:1px solid rgba(255,255,255,.10);
+      margin-top:22px;
+      padding-top:17px;
+      color:#8da3b7;
+      font-size:13px;
+    }
+
+
+    /* FLOATING WHATSAPP */
+
     .float-wa{
-      position:fixed;right:20px;bottom:20px;z-index:80;background:var(--green);color:#fff;
-      width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.55rem;
-      box-shadow:0 12px 30px rgba(24,169,87,.35)
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:120;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      background:#18a957;
+      color:white;
+      display:grid;
+      place-items:center;
+      font-size:23px;
+      box-shadow:0 12px 30px rgba(24,169,87,.35);
     }
-    .mini{font-size:.86rem;color:var(--muted)}
-    @media (max-width:900px){
-      .hero-grid,.about-grid,.cta,.contact-grid{grid-template-columns:1fr}
-      .grid,.channels{grid-template-columns:1fr 1fr}
-      .cta-actions{justify-content:flex-start}
-      .navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
-      .navlinks.show{display:flex}
-      .menu{display:block}
-    }
-    @media (max-width:620px){
-      .grid,.channels,.quickgrid,.facts,.footer-grid{grid-template-columns:1fr}
-      .hero{padding-top:48px}
-      .topbar .wrap{justify-content:center;text-align:center}
-      h1{font-size:3rem}
-      section{padding:56px 0}
-      .hero-actions .btn{width:100%}
+
+
+    /* TABLET */
+
+    @media(max-width:980px){
+
+      .hero-grid,
+      .about-grid,
+      .contact-grid,
+      .cta{
+        grid-template-columns:1fr;
+      }
+
+      .grid,
+      .steps,
+      .channels{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .products-gallery{
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .trust-strip{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .menu{
+        display:grid;
+        place-items:center;
+      }
+
+      .navlinks{
+        display:none;
+        position:absolute;
+        top:90px;
+        left:0;
+        right:0;
+        background:white;
+        padding:16px 4% 20px;
+        border-bottom:1px solid var(--line);
+        box-shadow:0 16px 34px rgba(7,26,49,.10);
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .navlinks.show{
+        display:flex;
+      }
+
+      .navlinks a{
+        padding:10px 4px;
+      }
+
+      .navcta{
+        text-align:center;
+      }
+
       .brandmark{
-  width:190px;
-  height:60px;
-}
+        width:min(330px,56vw);
+        height:72px;
+      }
 
-nav{
-  min-height:68px;
-}
+      .cta-actions{
+        justify-content:flex-start;
+      }
 
-.navcta{
-  padding:9px 12px;
-  font-size:.86rem;
-}
     }
+
+
+    /* MOBILE */
+
+    @media(max-width:650px){
+
+      .topbar .wrap{
+        justify-content:center;
+        text-align:center;
+        padding:6px 0;
+      }
+
+      nav{
+        min-height:76px;
+      }
+
+      .brandmark{
+        width:min(270px,70vw);
+        height:62px;
+      }
+
+      .navlinks{
+        top:76px;
+      }
+
+      .hero{
+        padding:48px 0;
+      }
+
+      h1{
+        font-size:49px;
+      }
+
+      section{
+        padding:55px 0;
+      }
+
+      .grid,
+      .steps,
+      .channels,
+      .quickgrid,
+      .facts,
+      .footer-grid,
+      .trust-strip{
+        grid-template-columns:1fr;
+      }
+
+      .products-gallery{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .product-tile img{
+        height:140px;
+      }
+
+      .hero-actions .btn{
+        width:100%;
+      }
+
+      .cta{
+        padding:28px;
+      }
+
+    }
+
+
+    @media(max-width:430px){
+
+      .products-gallery{
+        grid-template-columns:1fr;
+      }
+
+      .product-tile img{
+        height:190px;
+      }
+
+    }
+
   </style>
 </head>
+
+
 <body>
-  <div class="topbar">
-    <div class="wrap">
-      <div>📍 West Sagar Pur, New Delhi - 110046</div>
-      <div>
-        <a href="tel:+919315040471">📞 +91 9315040471</a> &nbsp; • &nbsp;
-        <a href="mailto:rvx.enterprises.delhi@gmail.com">✉️ rvx.enterprises.delhi@gmail.com</a>
-      </div>
+
+
+<!-- TOP CONTACT BAR -->
+
+<div class="topbar">
+  <div class="wrap">
+
+    <div>
+      📍 West Sagar Pur, New Delhi - 110046
     </div>
+
+    <div>
+      <a href="tel:+919315040471">
+        📞 +91 9315040471
+      </a>
+
+      &nbsp; • &nbsp;
+
+      <a href="mailto:rvx.enterprises.delhi@gmail.com">
+        ✉️ rvx.enterprises.delhi@gmail.com
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="wrap">
+
+    <nav>
+
+      <a class="brand" href="#home">
+
+        <div class="brandmark">
+
+          <img
+          src="images/RVX_Enterprises_Website_Header.png"
+          alt="RVX Enterprises">
+
+        </div>
+
+      </a>
+
+
+      <button class="menu">
+        ☰
+      </button>
+
+
+      <div class="navlinks">
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#products">
+          Products
+        </a>
+
+        <a href="#business">
+          Business
+        </a>
+
+        <a href="#connect">
+          Connect
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+
+        <a
+        class="navcta"
+        href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20an%20enquiry."
+        target="_blank">
+
+          WhatsApp Enquiry
+
+        </a>
+
+      </div>
+
+    </nav>
+
   </div>
 
-  <header>
-    <div class="wrap">
-      <nav>
-        <a class="brand" href="#home">
-          <div class="brandmark"><img src="images/337dc609-7bdd-4374-bea6-2d829815d178.png" alt="RVX Enterprises Logo"></div>
+</header>
+
+
+<main id="home">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="wrap hero-grid">
+
+
+    <div>
+
+      <span class="eyebrow">
+        ✓ Udyam Registered Micro Enterprise
+      </span>
+
+
+      <h1>
+        One Stop Solution for
+        <span>Your Daily Needs.</span>
+      </h1>
+
+
+      <p class="lead">
+
+        RVX Enterprises is a New Delhi-based proprietorship
+        engaged in online retail, e-commerce, trading and
+        general supply.
+
+        We source suitable products for individual,
+        office, business and institutional requirements
+        with a practical focus on quality, value and
+        reliable service.
+
+      </p>
+
+
+      <div class="hero-actions">
+
+        <a
+        class="btn btn-primary"
+        href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20a%20requirement.%20Item%3A%20%20Quantity%3A%20%20Delivery%20Location%3A%20"
+        target="_blank">
+
+          💬 Send Requirement on WhatsApp
+
         </a>
-        <button class="menu" aria-label="Open menu" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
-        <div class="navlinks">
-          <a href="#about">About</a>
-          <a href="#products">Products</a>
-          <a href="#business">Business</a>
-          <a href="#connect">Connect</a>
-          <a href="#contact">Contact</a>
-          <a class="navcta" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener">WhatsApp Enquiry</a>
+
+
+        <a
+        class="btn btn-dark"
+        href="#products">
+
+          View Product Categories
+
+        </a>
+
+
+        <a
+        class="btn btn-outline"
+        href="https://www.instagram.com/rvxenterprises/"
+        target="_blank">
+
+          Instagram @rvxenterprises
+
+        </a>
+
+      </div>
+
+
+      <div class="trust-strip">
+
+        <div class="trust-item">
+          ✓ Quality Products
         </div>
-      </nav>
+
+        <div class="trust-item">
+          ₹ Best Value
+        </div>
+
+        <div class="trust-item">
+          🚚 Reliable Supply
+        </div>
+
+        <div class="trust-item">
+          💬 Customer Support
+        </div>
+
+      </div>
+
+
     </div>
-  </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <span class="eyebrow">✓ Udyam Registered Micro Enterprise</span>
-          <h1>One Stop Solution for <span>Your Daily Needs.</span></h1>
-          <p class="lead">RVX Enterprises is a New Delhi-based proprietorship engaged in online retail, e-commerce, trading and general supply — serving individual, office, business and institutional requirements.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener">💬 Send Requirement on WhatsApp</a>
-            <a class="btn btn-dark" href="#products">View Product Categories</a>
-            <a class="btn btn-outline" href="https://instagram.com/rvxenterprises" target="_blank" rel="noopener">Instagram @rvxenterprises</a>
-          </div>
-          <p class="mini" style="margin-top:14px">Quality Products • Best Prices • Reliable Service</p>
-        </div>
-        <div class="hero-card">
-          <div class="gold" style="font-weight:900;letter-spacing:.08em;font-size:.82rem">RVX ENTERPRISES</div>
-          <h3>Your Requirement, Our Solution.</h3>
-          <p style="color:#c9d8e8">Tell us the item, quantity, specification and delivery location. We will check sourcing and share a suitable quotation.</p>
-          <div class="quickgrid">
-            <div class="quick"><strong>Office Supplies</strong><small>Stationery & essentials</small></div>
-            <div class="quick"><strong>General Supply</strong><small>Requirement-based sourcing</small></div>
-            <div class="quick"><strong>Retail / E-Commerce</strong><small>Useful daily products</small></div>
-            <div class="quick"><strong>B2B Enquiries</strong><small>Office & bulk requirements</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="products">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Products & Supply Categories</h2>
-          <p>Multi-category sourcing with a practical focus on commonly required office, home, utility and general-supply products.</p>
-        </div>
-        <div class="grid">
-          <div class="card"><div class="icon">🗂️</div><h3>Office Supplies</h3><p>Office stationery, files, folders, paper-related items, registers, writing supplies and office essentials.</p></div>
-          <div class="card"><div class="icon">🏠</div><h3>Home & Utility</h3><p>Household utility products, organizers, kitchen gadgets and practical daily-use items.</p></div>
-          <div class="card"><div class="icon">🔌</div><h3>Electronics & Accessories</h3><p>Mobile accessories, USB cables, power banks, Bluetooth speakers, TWS earbuds and related items.</p></div>
-          <div class="card"><div class="icon">💻</div><h3>Computer Accessories</h3><p>Useful computer and desk accessories sourced according to requirement and availability.</p></div>
-          <div class="card"><div class="icon">🧼</div><h3>Hygiene & Cleaning</h3><p>Sanitizer, hygiene products, cleaning consumables and utility supplies for offices and general use.</p></div>
-          <div class="card"><div class="icon">🎁</div><h3>Gifts & General Supply</h3><p>Gift items, customized requirements and other suitable products sourced against genuine demand.</p></div>
-        </div>
-      </div>
-    </section>
+    <div class="hero-card">
 
-    <section id="about" class="soft">
-      <div class="wrap about-grid">
-        <div class="about-panel">
-          <h2 style="margin-top:0;color:var(--navy)">About RVX Enterprises</h2>
-          <p>RVX Enterprises is your trusted destination for quality products at competitive prices. We offer office supplies, home & utility products, electronics & accessories, computer accessories, daily-use items, gifts and general supplies. We serve individual and business customers with a focus on quality, best price and reliable service.</p>
-          <div class="facts">
-            <div class="fact"><span>Business Type</span><strong>Proprietorship</strong></div>
-            <div class="fact"><span>Classification</span><strong>Micro Enterprise</strong></div>
-            <div class="fact"><span>Major Activity</span><strong>Trading</strong></div>
-            <div class="fact"><span>Business Activity</span><strong>Retail via E-Commerce</strong></div>
-          </div>
-        </div>
-        <div class="about-panel dark">
-          <h3 style="font-size:1.45rem;margin-top:0">MSME / Udyam Reference</h3>
-          <p>RVX Enterprises is recorded as an Udyam-registered micro enterprise.</p>
-          <div class="facts">
-            <div class="fact"><span>Enterprise</span><strong>RVX ENTERPRISES</strong></div>
-            <div class="fact"><span>Proprietor</span><strong>Rajesh Vinod Xess</strong></div>
-            <div class="fact"><span>Udyam No.</span><strong>UDYAM-DL-10-0127326</strong></div>
-            <div class="fact"><span>Location</span><strong>New Delhi, India</strong></div>
-          </div>
-          <p class="mini" style="color:#a9bfd3;margin-top:16px">Public website shows the shorter business location for privacy; detailed address is used only where operationally or officially required.</p>
-        </div>
+      <div class="gold">
+        RVX ENTERPRISES
       </div>
-    </section>
 
-    <section id="business">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Business Supply Model</h2>
-          <p>A low-overhead, requirement-led approach designed to avoid unnecessary inventory and quote after checking product availability and supplier rates.</p>
-        </div>
-        <div class="grid">
-          <div class="card"><div class="icon">1</div><h3>Receive Requirement</h3><p>Product, quantity, specification, budget if applicable, delivery location and required date.</p></div>
-          <div class="card"><div class="icon">2</div><h3>Source & Verify</h3><p>Check reliable supplier/dealer availability, exact specification, invoice support and delivery time.</p></div>
-          <div class="card"><div class="icon">3</div><h3>Share Quotation</h3><p>Calculate product cost, delivery/freight, applicable taxes and a reasonable business margin.</p></div>
-          <div class="card"><div class="icon">4</div><h3>Order Confirmation</h3><p>Proceed only after requirement, price and delivery terms are agreed and sourcing is feasible.</p></div>
-          <div class="card"><div class="icon">5</div><h3>Procure & Deliver</h3><p>Arrange the confirmed product, check quality/specification and complete delivery with records.</p></div>
-          <div class="card"><div class="icon">6</div><h3>Follow-Up</h3><p>Maintain payment, invoice and customer follow-up records to support repeat business.</p></div>
-        </div>
-      </div>
-    </section>
+      <h3>
+        Your Requirement, Our Solution.
+      </h3>
 
-    <section id="connect" class="soft">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Connect With RVX Enterprises</h2>
-          <p>Confirmed direct links are active below. Platforms whose exact RVX public profile URL is not yet confirmed are clearly marked instead of using a guessed link.</p>
-        </div>
-        <div class="channels">
-          <div class="channel">
-            <span class="status ok">CONFIRMED</span>
-            <strong>WhatsApp Business</strong>
-            <span>Primary enquiry and customer communication channel.</span>
-            <a class="link" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener">Start WhatsApp Enquiry →</a>
-          </div>
-          <div class="channel">
-            <span class="status ok">CONFIRMED</span>
-            <strong>Instagram</strong>
-            <span>@rvxenterprises — visual product promotion and customer discovery.</span>
-            <a class="link" href="https://instagram.com/rvxenterprises" target="_blank" rel="noopener">Open Instagram →</a>
-          </div>
-          <div class="channel">
-            <span class="status pending">PROFILE URL PENDING</span>
-            <strong>Facebook</strong>
-            <span>RVX Enterprises business page setup is recorded, but exact public custom URL is not yet confirmed in the master record.</span>
-          </div>
-          <div class="channel">
-            <span class="status pending">PROFILE URL PENDING</span>
-            <strong>IndiaMART</strong>
-            <span>B2B enquiries, product leads, sourcing and supply opportunities. Exact public RVX profile URL is not confirmed in the master record.</span>
-          </div>
-          <div class="channel">
-            <span class="status pending">SELLER ID PENDING</span>
-            <strong>GeM — Government e-Marketplace</strong>
-            <span>Planned government supply channel for eligible office, stationery and general-supply opportunities. Seller ID is not yet recorded.</span>
-            <a class="link" href="https://gem.gov.in/" target="_blank" rel="noopener">Open Official GeM Portal →</a>
-          </div>
-          <div class="channel">
-            <span class="status ok">OFFICIAL WEBSITE</span>
-            <strong>RVX Enterprises Website</strong>
-            <span>Central business identity, product information and enquiry destination.</span>
-            <a class="link" href="https://rvxess.github.io/rvx-enterprises/">rvxess.github.io/rvx-enterprises →</a>
-          </div>
-        </div>
-      </div>
-    </section>
+      <p>
 
-    <section>
-      <div class="wrap">
-        <div class="cta">
-          <div>
-            <h2>Have a Product or Bulk Requirement?</h2>
-            <p>Send the item name, quantity and delivery location on WhatsApp. RVX Enterprises can check suitable sourcing and quotation options.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20a%20requirement.%20Item%3A%20%20Quantity%3A%20%20Delivery%20Location%3A%20" target="_blank" rel="noopener">Send Requirement</a>
-            <a class="btn btn-outline" href="tel:+919315040471">Call Now</a>
-          </div>
-        </div>
-      </div>
-    </section>
+        Share the item, quantity,
+        preferred specification and
+        delivery location.
 
-    <section id="contact">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Contact RVX Enterprises</h2>
-          <p>For product enquiries, office supplies, bulk requirements and general-supply sourcing.</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-list">
-            <div class="contact-row"><div>💬</div><div><b>WhatsApp / Mobile</b><small><a href="tel:+919315040471">+91 9315040471</a></small></div></div>
-            <div class="contact-row"><div>📞</div><div><b>Alternate Mobile</b><small><a href="tel:+919310608326">+91 9310608326</a></small></div></div>
-            <div class="contact-row"><div>✉️</div><div><b>Primary Business Email</b><small><a href="mailto:rvx.enterprises.delhi@gmail.com">rvx.enterprises.delhi@gmail.com</a></small></div></div>
-            <div class="contact-row"><div>✉️</div><div><b>Alternate Email</b><small><a href="mailto:xess.r.v@gmail.com">xess.r.v@gmail.com</a></small></div></div>
-            <div class="contact-row"><div>📍</div><div><b>Public Business Location</b><small>West Sagar Pur, New Delhi - 110046</small></div></div>
-          </div>
-          <div class="about-panel">
-            <h3 style="margin-top:0;color:var(--navy)">Enquiry Checklist</h3>
-            <p>For a faster quotation, please share:</p>
-            <div class="facts">
-              <div class="fact"><span>01</span><strong>Product / Item</strong></div>
-              <div class="fact"><span>02</span><strong>Quantity</strong></div>
-              <div class="fact"><span>03</span><strong>Specification / Brand</strong></div>
-              <div class="fact"><span>04</span><strong>Delivery Location</strong></div>
-              <div class="fact"><span>05</span><strong>Required Date</strong></div>
-              <div class="fact"><span>06</span><strong>Invoice / GST Requirement</strong></div>
-            </div>
-            <div class="notice" style="margin-top:18px">
-              Product price, stock, exact specification, warranty and delivery availability should be confirmed before final commitment. RVX Enterprises does not publish unverified stock or registration claims.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        We will check suitable sourcing
+        options and respond with
+        availability and quotation details.
 
-  <footer>
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <h4>RVX ENTERPRISES</h4>
-          <p>Online Retail • E-Commerce • General Supply<br>Quality Products • Best Prices • Reliable Service</p>
-          <p class="mini" style="color:#8fa4b8">Proprietorship • Udyam Registered Micro Enterprise</p>
+      </p>
+
+
+      <div class="quickgrid">
+
+        <div class="quick">
+          <strong>
+            Office Supplies
+          </strong>
+
+          <small>
+            Stationery & office essentials
+          </small>
         </div>
-        <div>
-          <h4>Quick Links</h4>
-          <a href="#about">About Us</a>
-          <a href="#products">Products</a>
-          <a href="#business">Business Model</a>
-          <a href="#connect">Digital Channels</a>
-          <a href="#contact">Contact</a>
+
+
+        <div class="quick">
+
+          <strong>
+            General Supply
+          </strong>
+
+          <small>
+            Requirement-based sourcing
+          </small>
+
         </div>
-        <div>
-          <h4>Direct Connect</h4>
-          <a href="https://wa.me/919315040471" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="https://instagram.com/rvxenterprises" target="_blank" rel="noopener">Instagram</a>
-          <a href="mailto:rvx.enterprises.delhi@gmail.com">Email</a>
-          <a href="https://gem.gov.in/" target="_blank" rel="noopener">GeM Portal</a>
+
+
+        <div class="quick">
+
+          <strong>
+            Retail / E-Commerce
+          </strong>
+
+          <small>
+            Useful daily-use products
+          </small>
+
         </div>
+
+
+        <div class="quick">
+
+          <strong>
+            B2B Enquiries
+          </strong>
+
+          <small>
+            Office & bulk requirements
+          </small>
+
+        </div>
+
       </div>
-      <div class="copyright">© <span id="year"></span> RVX Enterprises. All rights reserved. | West Sagar Pur, New Delhi - 110046</div>
+
     </div>
-  </footer>
 
-  <a class="float-wa" href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp RVX Enterprises">💬</a>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelectorAll('.navlinks a').forEach(a => a.addEventListener('click', () => {
-      document.querySelector('.navlinks').classList.remove('show');
-    }));
-  </script>
-</body>
-</html>
+  </div>
+
+</section>
+
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<div class="wrap">
+
+
+<div class="section-head">
+
+<h2>
+Products & Supply Categories
+</h2>
+
+<p>
+
+Multi-category sourcing focused on
+practical office, home, electronic,
+utility, gift, cleaning and
+general-supply requirements.
+
+</p>
+
+</div>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="icon">
+🗂️
+</div>
+
+<h3>
+Office Supplies & Stationery
+</h3>
+
+<p>
+Files, folders, registers,
+notebooks, writing supplies,
+stationery sets, pape
