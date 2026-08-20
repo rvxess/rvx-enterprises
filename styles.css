@@ -96,12 +96,13 @@ button,input,textarea{
 .logo{
   display:flex;
   align-items:center;
-  min-width:240px;
+  min-width:0;
+  flex:0 1 430px;
 }
 
 .logo img{
-  width:300px;
-  max-height:78px;
+  width:clamp(300px,35vw,430px);
+  height:82px;
   object-fit:contain;
   object-position:left center;
 }
