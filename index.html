@@ -1954,4 +1954,2382 @@ footer h4{
 
   align-items:center;
 
-  justify-content:c
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:
+  #237b55;
+
+  color:#ffffff;
+
+  box-shadow:
+  0 13px 26px rgba(0,0,0,.22);
+
+  font-size:9px;
+
+  font-weight:800;
+
+  transition:.25s ease;
+}
+
+
+.float-wa:hover{
+
+  transform:
+  translateY(-4px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media(max-width:980px){
+
+  .hero-grid{
+    gap:34px;
+  }
+
+  .products-grid{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+  .why-grid{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+  .channel-grid{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:760px){
+
+  .brand-banner{
+    padding:
+    8px 4px;
+  }
+
+  .brand-banner-inner{
+    width:100%;
+  }
+
+  .brand-banner img{
+
+    width:100%;
+
+    max-height:170px;
+
+    object-fit:contain;
+  }
+
+  .navbar-inner{
+
+    min-height:60px;
+
+    justify-content:
+    flex-end;
+  }
+
+  .menu-button{
+    display:block;
+  }
+
+  .nav-links{
+
+    display:none;
+
+    position:absolute;
+
+    top:54px;
+
+    right:0;
+
+    width:min(
+      340px,
+      calc(100vw - 32px)
+    );
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    padding:11px;
+
+    border-radius:14px;
+
+    border:
+    1px solid var(--line);
+
+    background:#ffffff;
+
+    box-shadow:var(--shadow);
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+
+  .nav-links a{
+
+    width:100%;
+
+    justify-content:flex-start;
+
+    padding:
+    11px 12px;
+  }
+
+  .hero{
+
+    padding:
+    60px 0 65px;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .contact-box{
+
+    grid-template-columns:
+    1fr;
+  }
+
+  .hero-content{
+    text-align:center;
+  }
+
+  .hero-lead{
+    margin:0 auto;
+  }
+
+  .hero-actions,
+  .hero-points{
+    justify-content:center;
+  }
+
+  .hero-panel{
+    max-width:600px;
+    margin:0 auto;
+  }
+
+  .process-grid{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:
+    1fr 1fr;
+  }
+
+  .footer-brand{
+    grid-column:
+    1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media(max-width:560px){
+
+  .container{
+
+    width:min(
+      100% - 24px,
+      1180px
+    );
+  }
+
+  .hero h1{
+
+    font-size:39px;
+
+    letter-spacing:-1.4px;
+  }
+
+  .hero-lead{
+    font-size:13px;
+  }
+
+  .hero-actions{
+    flex-direction:column;
+  }
+
+  .hero-actions .btn{
+    width:100%;
+  }
+
+  .hero-mini-grid{
+    grid-template-columns:1fr;
+  }
+
+  .products-grid,
+  .why-grid,
+  .process-grid,
+  .channel-grid{
+
+    grid-template-columns:1fr;
+  }
+
+  .product-image{
+    height:210px;
+  }
+
+  .section{
+    padding:
+    65px 0;
+  }
+
+  .about-card,
+  .udyam-card{
+
+    padding:
+    27px 21px;
+  }
+
+  .about-list{
+    grid-template-columns:1fr;
+  }
+
+  .contact-box{
+
+    padding:
+    31px 22px;
+  }
+
+  .contact-box h2{
+    font-size:29px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-brand{
+    grid-column:auto;
+  }
+
+  .footer-bottom{
+
+    flex-direction:column;
+
+    text-align:center;
+  }
+
+}
+
+
+/* =========================================================
+   END CSS
+   ========================================================= */
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     FULL WIDTH FINAL RVX LOGO
+     ========================================================= -->
+
+<div class="brand-banner" id="home">
+
+  <div class="brand-banner-inner">
+
+    <img
+      src="images/wide_clean_white_banner_logo_header_style_image%20(1).png"
+      alt="RVX Enterprises"
+    >
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
+<header class="navbar">
+
+  <div class="container navbar-inner">
+
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Open Menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+
+    <nav
+      class="nav-links"
+      id="navLinks"
+    >
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#products">
+        Products
+      </a>
+
+      <a href="#udyam">
+        Udyam
+      </a>
+
+      <a href="#process">
+        How We Work
+      </a>
+
+      <a href="#connect">
+        Connect
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        class="whatsapp-nav"
+        href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20a%20business%20enquiry."
+        target="_blank"
+        rel="noopener"
+      >
+        WhatsApp Enquiry
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="hero">
+
+  <div class="container hero-grid">
+
+
+    <div class="hero-content">
+
+
+      <div class="eyebrow">
+
+        <span class="eyebrow-dot"></span>
+
+        Udyam Registered Micro Enterprise
+
+      </div>
+
+
+      <h1>
+
+        Reliable Supply.
+
+        <span>
+          Professional Sourcing.
+        </span>
+
+      </h1>
+
+
+      <p class="hero-lead">
+
+        <strong>
+          RVX Enterprises
+        </strong>
+
+        is a New Delhi-based proprietorship
+        engaged in
+
+        <strong>
+          Online Retail,
+          E-Commerce,
+          Trading
+          and General Office Supply.
+        </strong>
+
+        We support individuals,
+        offices,
+        businesses
+        and institutional requirements
+        through practical
+        requirement-based sourcing.
+
+      </p>
+
+
+      <div class="hero-actions">
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20want%20to%20send%20a%20product%20requirement."
+          target="_blank"
+          rel="noopener"
+        >
+          Send Requirement
+        </a>
+
+
+        <a
+          class="btn btn-gold"
+          href="#products"
+        >
+          Explore Products
+        </a>
+
+
+        <a
+          class="btn btn-light"
+          href="#contact"
+        >
+          Contact Us
+        </a>
+
+      </div>
+
+
+      <div class="hero-points">
+
+
+        <div class="hero-point">
+
+          <span class="hero-check">
+            ✓
+          </span>
+
+          Udyam Registered
+
+        </div>
+
+
+        <div class="hero-point">
+
+          <span class="hero-check">
+            ✓
+          </span>
+
+          Requirement-Based Sourcing
+
+        </div>
+
+
+        <div class="hero-point">
+
+          <span class="hero-check">
+            ✓
+          </span>
+
+          Business Supply Support
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="hero-panel">
+
+
+      <div class="hero-panel-label">
+        RVX ENTERPRISES
+      </div>
+
+
+      <h2>
+        Your Requirement.<br>
+        Our Supply Support.
+      </h2>
+
+
+      <p>
+
+        Tell us the product,
+        quantity,
+        preferred specification
+        and delivery location.
+
+        We review suitable sourcing
+        and availability
+        before final quotation.
+
+      </p>
+
+
+      <div class="hero-mini-grid">
+
+
+        <div class="hero-mini">
+
+          <strong>
+            Office Supplies
+          </strong>
+
+          <span>
+            Stationery,
+            files,
+            notebooks
+            and office essentials.
+          </span>
+
+        </div>
+
+
+        <div class="hero-mini">
+
+          <strong>
+            General Supply
+          </strong>
+
+          <span>
+            Requirement-led sourcing
+            across practical categories.
+          </span>
+
+        </div>
+
+
+        <div class="hero-mini">
+
+          <strong>
+            E-Commerce
+          </strong>
+
+          <span>
+            Selected daily-use
+            and useful products.
+          </span>
+
+        </div>
+
+
+        <div class="hero-mini">
+
+          <strong>
+            B2B Enquiries
+          </strong>
+
+          <span>
+            Office,
+            commercial
+            and bulk requirements.
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <a
+        class="hero-panel-bottom"
+        href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20please%20share%20quotation%20details."
+        target="_blank"
+        rel="noopener"
+      >
+
+        <span>
+          Request a Quotation
+        </span>
+
+        <span>
+          →
+        </span>
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRODUCTS
+     ========================================================= -->
+
+<section
+  class="section"
+  id="products"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <span class="kicker">
+        OUR SUPPLY CATEGORIES
+      </span>
+
+      <h2>
+        Products for Everyday
+        Office & Business Requirements
+      </h2>
+
+      <p>
+
+        RVX Enterprises supports
+        practical sourcing across
+        office stationery,
+        computer accessories,
+        electronics,
+        cleaning products,
+        utility items
+        and general supply requirements.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="products-grid">
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/files-folders.jpg"
+            alt="Files and folders"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Office Essentials
+          </span>
+
+          <h3>
+            Files & Folders
+          </h3>
+
+          <p>
+
+            Files,
+            folders,
+            record keeping
+            and document organization
+            products for office use.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 01
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/notebooks.jpg"
+            alt="Notebooks"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Stationery
+          </span>
+
+          <h3>
+            Notebooks & Registers
+          </h3>
+
+          <p>
+
+            Everyday notebooks,
+            registers
+            and writing materials
+            for personal
+            and business use.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 02
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/stationery-set.jpg"
+            alt="Stationery set"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Office Supply
+          </span>
+
+          <h3>
+            Stationery Sets
+          </h3>
+
+          <p>
+
+            Pens,
+            writing tools,
+            desk stationery
+            and useful office
+            supply combinations.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 03
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/desk-organizer.jpg"
+            alt="Desk organizer"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Office Utility
+          </span>
+
+          <h3>
+            Desk Organizers
+          </h3>
+
+          <p>
+
+            Practical organizing
+            and storage products
+            for cleaner,
+            efficient
+            workspaces.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 04
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/power-strip.jpg"
+            alt="Power strip"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Electronics
+          </span>
+
+          <h3>
+            Power Accessories
+          </h3>
+
+          <p>
+
+            Selected power strips,
+            electrical accessories
+            and practical
+            electronic-use products.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 05
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/batteries.jpg"
+            alt="Batteries"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Daily Utility
+          </span>
+
+          <h3>
+            Batteries & Accessories
+          </h3>
+
+          <p>
+
+            Batteries
+            and commonly required
+            electronic accessories
+            for day-to-day use.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 06
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/usb-drive.jpg"
+            alt="USB drive"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Computer Accessories
+          </span>
+
+          <h3>
+            USB & Storage Products
+          </h3>
+
+          <p>
+
+            USB drives
+            and selected storage
+            accessories
+            for office
+            and personal use.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 07
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/wireless-mouse.jpg"
+            alt="Wireless mouse"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Computer Utility
+          </span>
+
+          <h3>
+            Wireless Mouse & Accessories
+          </h3>
+
+          <p>
+
+            Useful computer
+            and desk accessories
+            for home,
+            office
+            and business requirements.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 08
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/cleaning-supplies.jpg"
+            alt="Cleaning supplies"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Hygiene
+          </span>
+
+          <h3>
+            Cleaning Supplies
+          </h3>
+
+          <p>
+
+            Cleaning,
+            hygiene
+            and workplace utility
+            products
+            for regular requirements.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 09
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/packaging-supplies.jpg"
+            alt="Packaging supplies"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Packaging
+          </span>
+
+          <h3>
+            Packaging Materials
+          </h3>
+
+          <p>
+
+            Useful packaging
+            and dispatch materials
+            for commercial
+            and general supply needs.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 10
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/packing-tapes.jpg"
+            alt="Packing tapes"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            General Supply
+          </span>
+
+          <h3>
+            Packing Tapes
+          </h3>
+
+          <p>
+
+            Packing,
+            sealing
+            and general-use
+            tape products
+            for business requirements.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 11
+          </div>
+
+        </div>
+
+      </article>
+
+
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images/calculator.jpg"
+            alt="Calculator"
+          >
+
+        </div>
+
+        <div class="product-body">
+
+          <span class="product-tag">
+            Office Utility
+          </span>
+
+          <h3>
+            Calculators & Desk Utility
+          </h3>
+
+          <p>
+
+            Practical desk-use
+            and office utility
+            items
+            according to requirement.
+
+          </p>
+
+          <div class="product-number">
+            RVX CATEGORY 12
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT + UDYAM
+     ========================================================= -->
+
+<section
+  class="section section-soft"
+  id="about"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <span class="kicker">
+        ABOUT RVX ENTERPRISES
+      </span>
+
+      <h2>
+        Practical Business Supply
+        With a Professional Approach
+      </h2>
+
+    </div>
+
+
+
+    <div class="about-grid">
+
+
+      <div class="about-card">
+
+
+        <h2>
+          About RVX Enterprises
+        </h2>
+
+
+        <p>
+
+          RVX Enterprises is a
+          New Delhi-based proprietorship
+          focused on
+
+          <strong>
+            online retail,
+            e-commerce,
+            trading
+            and general office supply.
+          </strong>
+
+        </p>
+
+
+        <p>
+
+          Our approach is requirement-led.
+          We first understand
+          the customer’s need,
+          preferred specification,
+          quantity
+          and delivery location.
+
+        </p>
+
+
+        <p>
+
+          Suitable sourcing options,
+          availability
+          and commercial details
+          are then reviewed
+          before final commitment.
+
+        </p>
+
+
+        <div class="about-list">
+
+
+          <div class="about-item">
+
+            <small>
+              BUSINESS TYPE
+            </small>
+
+            <strong>
+              Proprietorship
+            </strong>
+
+          </div>
+
+
+          <div class="about-item">
+
+            <small>
+              CLASSIFICATION
+            </small>
+
+            <strong>
+              Micro Enterprise
+            </strong>
+
+          </div>
+
+
+          <div class="about-item">
+
+            <small>
+              MAJOR ACTIVITY
+            </small>
+
+            <strong>
+              Trading
+            </strong>
+
+          </div>
+
+
+          <div class="about-item">
+
+            <small>
+              BUSINESS ACTIVITY
+            </small>
+
+            <strong>
+              Retail via E-Commerce
+            </strong>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <div
+        class="udyam-card"
+        id="udyam"
+      >
+
+
+        <div class="udyam-pill">
+          UDYAM / MSME REGISTRATION
+        </div>
+
+
+        <h2>
+          Udyam Registered
+          Micro Enterprise
+        </h2>
+
+
+        <p>
+
+          RVX Enterprises is registered
+          as a Micro Enterprise
+          under the Ministry of Micro,
+          Small & Medium Enterprises,
+          Government of India.
+
+        </p>
+
+
+        <div class="udyam-number">
+
+          <small>
+            UDYAM REGISTRATION NUMBER
+          </small>
+
+          <strong>
+            UDYAM-DL-10-0127326
+          </strong>
+
+        </div>
+
+
+        <div class="udyam-number">
+
+          <small>
+            ENTERPRISE
+          </small>
+
+          <strong style="font-size:15px;">
+            RVX ENTERPRISES
+          </strong>
+
+        </div>
+
+
+        <div class="udyam-number">
+
+          <small>
+            PROPRIETOR
+          </small>
+
+          <strong style="font-size:15px;">
+            Rajesh Vinod Xess
+          </strong>
+
+        </div>
+
+
+        <a
+          class="certificate-btn"
+          href="RVX_Udyam%20Registration%20Certificate.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          View Udyam Registration Certificate →
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WHY CHOOSE US
+     ========================================================= -->
+
+<section class="section section-cream">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <span class="kicker">
+        WHY RVX
+      </span>
+
+      <h2>
+        A Simple,
+        Clear and Reliable
+        Business Process
+      </h2>
+
+      <p>
+
+        We focus on understanding
+        what the customer actually needs
+        before confirming
+        a product or supply commitment.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="why-grid">
+
+
+      <div class="why-card">
+
+        <div class="why-number">
+          01
+        </div>
+
+        <h3>
+          Requirement First
+        </h3>
+
+        <p>
+
+          Product,
+          quantity,
+          specification
+          and delivery location
+          are understood first.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="why-card">
+
+        <div class="why-number">
+          02
+        </div>
+
+        <h3>
+          Suitable Sourcing
+        </h3>
+
+        <p>
+
+          Supplier
+          and sourcing options
+          are reviewed
+          according to the requirement.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="why-card">
+
+        <div class="why-number">
+          03
+        </div>
+
+        <h3>
+          Clear Quotation
+        </h3>
+
+        <p>
+
+          Availability,
+          pricing
+          and commercial terms
+          can be communicated
+          before confirmation.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="why-card">
+
+        <div class="why-number">
+          04
+        </div>
+
+        <h3>
+          Customer Support
+        </h3>
+
+        <p>
+
+          Communication
+          and follow-up
+          are maintained
+          throughout the supply process.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROCESS
+     ========================================================= -->
+
+<section
+  class="section"
+  id="process"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <span class="kicker">
+        HOW WE WORK
+      </span>
+
+      <h2>
+        Professional Supply Process
+      </h2>
+
+      <p>
+
+        A structured process
+        helps reduce confusion
+        and keeps the requirement,
+        sourcing
+        and quotation stages clear.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="process-grid">
+
+
+      <div class="process-card">
+
+        <div class="process-step">
+          01
+        </div>
+
+        <h3>
+          Receive Requirement
+        </h3>
+
+        <p>
+
+          Product,
+          quantity,
+          brand or specification,
+          delivery location
+          and required date.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-step">
+          02
+        </div>
+
+        <h3>
+          Source & Verify
+        </h3>
+
+        <p>
+
+          Suitable supplier
+          or dealer options,
+          availability
+          and specification are checked.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-step">
+          03
+        </div>
+
+        <h3>
+          Share Quotation
+        </h3>
+
+        <p>
+
+          A quotation can be prepared
+          after checking
+          product cost,
+          delivery
+          and applicable terms.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-step">
+          04
+        </div>
+
+        <h3>
+          Order Confirmation
+        </h3>
+
+        <p>
+
+          Processing starts
+          after product,
+          price,
+          payment
+          and delivery terms are confirmed.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-step">
+          05
+        </div>
+
+        <h3>
+          Procure & Supply
+        </h3>
+
+        <p>
+
+          Confirmed products
+          are arranged
+          and supplied
+          with appropriate business records.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="process-card">
+
+        <div class="process-step">
+          06
+        </div>
+
+        <h3>
+          Customer Follow-Up
+        </h3>
+
+        <p>
+
+          Customer communication
+          and follow-up
+          are maintained
+          for continued service.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     DIGITAL CHANNELS
+     ========================================================= -->
+
+<section
+  class="section section-soft"
+  id="connect"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <span class="kicker">
+        DIGITAL BUSINESS PRESENCE
+      </span>
+
+      <h2>
+        Connect With RVX Enterprises
+      </h2>
+
+      <p>
+
+        Use our confirmed
+        business channels
+        for enquiries,
+        communication,
+        business updates
+        and product requirements.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="channel-grid">
+
+
+      <div class="channel-card">
+
+        <div class="channel-top">
+
+          <div class="channel-icon">
+            WA
+          </div>
+
+          <span class="status status-active">
+            ACTIVE
+          </span>
+
+        </div>
+
+        <h3>
+          WhatsApp Business
+        </h3>
+
+        <p>
+
+          Primary channel
+          for product enquiries,
+          quotation requests
+          and direct business communication.
+
+        </p>
+
+        <a
+          href="https://wa.me/919315040471"
+          target="_blank"
+          rel="noopener"
+        >
+          Open WhatsApp Business →
+        </a>
+
+      </div>
+
+
+
+      <div class="channel-card">
+
+        <div class="channel-top">
+
+          <div class="channel-icon">
+            IG
+          </div>
+
+          <span class="status status-active">
+            ACTIVE
+          </span>
+
+        </div>
+
+        <h3>
+          Instagram
+        </h3>
+
+        <p>
+
+          Follow RVX Enterprises
+          for business updates,
+          product visibility
+          and online presence.
+
+        </p>
+
+        <a
+          href="https://www.instagram.com/rvxenterprises/"
+          target="_blank"
+          rel="noopener"
+        >
+          Open Instagram →
+        </a>
+
+      </div>
+
+
+
+      <div class="channel-card">
+
+        <div class="channel-top">
+
+          <div class="channel-icon">
+            FB
+          </div>
+
+          <span class="status status-active">
+            ACTIVE
+          </span>
+
+        </div>
+
+        <h3>
+          Facebook
+        </h3>
+
+        <p>
+
+          Connect with
+          the RVX Enterprises
+          business page
+          for company information
+          and updates.
+
+        </p>
+
+        <a
+          href="https://www.facebook.com/rvxenterprises"
+          target="_blank"
+          rel="noopener"
+        >
+          Open Facebook Page →
+        </a>
+
+      </div>
+
+
+
+      <div class="channel-card">
+
+        <div class="channel-top">
+
+          <div class="channel-icon">
+            IM
+          </div>
+
+          <span class="status status-update">
+            UNDER UPDATE
+          </span>
+
+        </div>
+
+        <h3>
+          IndiaMART
+        </h3>
+
+        <p>
+
+          B2B marketplace presence
+          for product enquiries,
+          business sourcing
+          and supply opportunities.
+
+        </p>
+
+        <div class="update-text">
+          Business Profile / Listing Under Update
+        </div>
+
+      </div>
+
+
+
+      <div class="channel-card">
+
+        <div class="channel-top">
+
+          <div class="channel-icon">
+            GeM
+          </div>
+
+          <span class="status status-update">
+            UNDER UPDATE
+          </span>
+
+        </div>
+
+        <h3>
+          Government e-Marketplace
+        </h3>
+
+        <p>
+
+          Business presence
+          for eligible government
+          procurement
+          and supply opportunities.
+
+        </p>
+
+        <div class="update-text">
+          Business Profile / Listing Under Update
+        </div>
+
+      </div>
+
+
+
+      <div class="channel-card">
+
+        <div class="channel-top">
+
+          <div class="channel-icon">
+            WEB
+          </div>
+
+          <span class="status status-active">
+            OFFICIAL
+          </span>
+
+        </div>
+
+        <h3>
+          Official Website
+        </h3>
+
+        <p>
+
+          Company information,
+          products,
+          Udyam details,
+          business channels
+          and enquiry options
+          in one place.
+
+        </p>
+
+        <a
+          href="https://rvxess.github.io/rvx-enterprises/"
+          target="_blank"
+          rel="noopener"
+        >
+          Official RVX Website →
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+
+<section
+  class="contact-section"
+  id="contact"
+>
+
+  <div class="container">
+
+
+    <div class="contact-box">
+
+
+      <div>
+
+
+        <h2>
+          Have a Product,
+          Office or Bulk Requirement?
+        </h2>
+
+
+        <p>
+
+          Send the product name,
+          quantity,
+          preferred specification
+          and delivery location.
+
+          RVX Enterprises can review
+          suitable sourcing options
+          and respond
+          with availability
+          and quotation details.
+
+        </p>
+
+
+        <p style="margin-top:15px;">
+
+          West Sagar Pur,
+          New Delhi - 110046
+
+        </p>
+
+
+      </div>
+
+
+
+      <div class="contact-actions">
+
+
+        <a
+          class="contact-wa"
+          href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20a%20product%20or%20bulk%20requirement."
+          target="_blank"
+          rel="noopener"
+        >
+          Send Requirement on WhatsApp
+        </a>
+
+
+        <a
+          class="contact-call"
+          href="tel:+919315040471"
+        >
+          Call +91 9315040471
+        </a>
+
+
+        <a
+          class="contact-mail"
+          href="mailto:rvx.enterprises.delhi@gmail.com"
+        >
+          rvx.enterprises.delhi@gmail.com
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+  <div class="container">
+
+
+    <div class="footer-grid">
+
+
+      <div class="footer-brand">
+
+
+        <h3>
+          RVX ENTERPRISES
+        </h3>
+
+
+        <p>
+
+          Online Retail •
+          E-Commerce •
+          Trading •
+          General Office Supply
+
+        </p>
+
+
+        <p style="margin-top:9px;">
+
+          Requirement-based sourcing
+          for individuals,
+          offices,
+          businesses
+          and institutional requirements.
+
+        </p>
+
+
+        <div class="footer-cert">
+
+          Udyam Registered Micro Enterprise
+          <br>
+
+          UDYAM-DL-10-0127326
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="footer-links">
+
+
+        <h4>
+          Quick Links
+        </h4>
+
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#products">
+          Products
+        </a>
+
+        <a href="#udyam">
+          Udyam
+        </a>
+
+        <a href="#process">
+          How We Work
+        </a>
+
+        <a href="#connect">
+          Connect
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+
+      </div>
+
+
+
+      <div class="footer-contact">
+
+
+        <h4>
+          Contact RVX
+        </h4>
+
+
+        <div>
+          West Sagar Pur,
+          New Delhi - 110046
+        </div>
+
+
+        <div>
+
+          <a href="tel:+919315040471">
+            +91 9315040471
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <a href="mailto:rvx.enterprises.delhi@gmail.com">
+            rvx.enterprises.delhi@gmail.com
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <a
+            href="https://www.instagram.com/rvxenterprises/"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
+
+          &nbsp; • &nbsp;
+
+          <a
+            href="https://www.facebook.com/rvxenterprises"
+            target="_blank"
+            rel="noopener"
+          >
+            Facebook
+          </a>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+
+      <div>
+
+        ©
+        <span id="year"></span>
+
+        RVX Enterprises.
+        All Rights Reserved.
+
+      </div>
+
+
+      <div>
+        New Delhi • India
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     FLOATING WHATSAPP
+     ========================================================= -->
+
+<a
+  class="float-wa"
+  href="https://wa.me/919315040471?text=Hello%20RVX%20Enterprises%2C%20I%20have%20an%20enquiry."
+  target="_blank"
+  rel="noopener"
+  aria-label="WhatsApp RVX Enterprises"
+>
+  WA
+</a>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+
+/* YEAR */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+
+/* MOBILE MENU */
+
+const menuButton =
+document.getElementById("menuButton");
+
+const navLinks =
+document.getElementById("navLinks");
+
+
+menuButton.addEventListener(
+"click",
+function(){
+
+  navLinks.classList.toggle("show");
+
+  const open =
+  navLinks.classList.contains("show");
+
+  menuButton.textContent =
+  open ? "✕" : "☰";
+
+  menuButton.setAttribute(
+  "aria-expanded",
+  open ? "true" : "false"
+  );
+
+}
+);
+
+
+
+/* CLOSE MENU AFTER LINK CLICK */
+
+document
+.querySelectorAll("#navLinks a")
+.forEach(function(link){
+
+  link.addEventListener(
+  "click",
+  function(){
+
+    navLinks.classList.remove("show");
+
+    menuButton.textContent =
+    "☰";
+
+    menuButton.setAttribute(
+    "aria-expanded",
+    "false"
+    );
+
+  }
+  );
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
